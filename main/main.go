@@ -23,7 +23,7 @@ func SpamMasker(textSlice []byte) string {
 
 	var result []byte
 	flagReplace := false
-
+	//
 	for i := 0; i < l1; i++ {
 		if hasPrefix(textSlice[i:], check) {
 			// ищем спам ссылки"
