@@ -23,7 +23,6 @@ func SpamMasker(textSlice []byte) string {
 
 	var result []byte
 	flagReplace := false
-	//
 	for i := 0; i < l1; i++ {
 		if hasPrefix(textSlice[i:], check) {
 			// ищем спам ссылки"
@@ -44,9 +43,8 @@ func SpamMasker(textSlice []byte) string {
 			flagReplace = false
 		}
 	}
-	var resultt string
-	resultt = string(result)
-	return resultt
+
+	return string(result)
 }
 func hasPrefix(textSlice []byte, check string) bool { //Галя, неси костыли.
 	// Та же реализация по сути, что и в стандартном пакете strings, только мы принимаем срез битов, а не строку
