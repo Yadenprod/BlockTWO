@@ -6,3 +6,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/.idea/gron.iml/
+/.idea/modules.xml/
+/.idea/vcs.xml/
